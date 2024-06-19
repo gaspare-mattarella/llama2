@@ -22,7 +22,7 @@ chat_history = []
 
 url = 'https://space-gpt.westeurope.inference.ml.azure.com/score'
 # Replace this with the primary/secondary key, AMLToken, or Microsoft Entra ID token for the endpoint
-api_key = '1Qr3xMZNvpueiRF2sUr5deTiodt4z3AG'
+api_key = st.secrets['api_key']
 if not api_key:
     raise Exception("A key should be provided to invoke the endpoint")
 
